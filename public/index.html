@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallID - Know Who's Calling</title>
+    <meta name="description" content="Identify unknown callers, block spam calls, and take control of your phone with our community-driven database">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Know Who's Calling</h1>
+            <p class="subtitle">Identify unknown callers, block spam calls, and take control of your phone with our community-driven database</p>
+            
+            <div class="search-card">
+                <div class="search-box">
+                    <input type="tel" id="phoneInput" placeholder="Enter phone number to lookup" />
+                    <button id="searchBtn">🔍</button>
+                </div>
+                <p class="search-help">Search our database of millions of numbers</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Instant Lookup</h3>
+                    <p>Identify any phone number instantly with our comprehensive database</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Spam Protection</h3>
+                    <p>Block unwanted calls and protect yourself from phone scams</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Community Driven</h3>
+                    <p>Powered by millions of users worldwide sharing caller information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="results" id="resultsSection" style="display: none;">
+        <div class="container">
+            <div class="result-card" id="resultCard">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Spam Protection Section -->
+    <section class="spam-protection">
+        <div class="container">
+            <h2>Advanced Spam Protection</h2>
+            <p class="section-subtitle">Our AI-powered system analyzes millions of calls daily to protect you from unwanted calls and scams</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📵</div>
+                    <div class="stat-value">2.3M</div>
+                    <div class="stat-label">Spam Calls Blocked Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🛡️</div>
+                    <div class="stat-value">500M+</div>
+                    <div class="stat-label">Numbers in Database</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-value">300M+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+            </div>
+
+            <div class="spam-list">
+                <h3>⚠️ Recently Reported Spam Numbers</h3>
+                <div class="spam-items">
+                    <div class="spam-item">
+                        <div class="spam-info">
+                            <span class="spam-number">+1 555-123-9999</span>
+                            <span class="spam-badge high-risk">High Risk</span>
+                            <p class="spam-name">Telemarketer</p>
+                        </div>
+                        <div class="spam-reports">
+                            <div class="report-count">1,247 reports</div>
+                            <div class="report-time">in 24 hours</div>
+                        </div>
+                    </div>
+                    <div class="spam-item">
+                        <div class="spam-info">
+                            <span class="spam-number">+1 555-987-6543</span>
+                            <span class="spam-badge high-risk">High Risk</span>
+                            <p class="spam-name">Robocaller</p>
+                        </div>
+                        <div class="spam-reports">
+                            <div class="report-count">892 reports</div>
+                            <div class="report-time">in 24 hours</div>
+                        </div>
+                    </div>
+                    <div class="spam-item">
+                        <div class="spam-info">
+                            <span class="spam-number">+1 555-456-7890</span>
+                            <span class="spam-badge critical-risk">Critical Risk</span>
+                            <p class="spam-name">Scam Alert</p>
+                        </div>
+                        <div class="spam-reports">
+                            <div class="report-count">2,156 reports</div>
+                            <div class="report-time">in 24 hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <h2>Powered by Community</h2>
+            <p class="section-subtitle">Join millions of users worldwide who contribute to making phone calls safer for everyone</p>
+
+            <div class="community-stats">
+                <div class="community-stat">
+                    <div class="community-icon">👥</div>
+                    <div class="community-value">50M+</div>
+                    <div class="community-label">Active Contributors</div>
+                </div>
+                <div class="community-stat">
+                    <div class="community-icon">🚩</div>
+                    <div class="community-value">1B+</div>
+                    <div class="community-label">Numbers Reported</div>
+                </div>
+                <div class="community-stat">
+                    <div class="community-icon">💬</div>
+                    <div class="community-value">200M+</div>
+                    <div class="community-label">Comments Added</div>
+                </div>
+                <div class="community-stat">
+                    <div class="community-icon">👍</div>
+                    <div class="community-value">500M+</div>
+                    <div class="community-label">Helpful Ratings</div>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <h3>💬 Recent Community Activity</h3>
+                <div class="activity-items">
+                    <div class="activity-item">
+                        <div class="user-avatar">S</div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <span class="user-name">Sarah M.</span>
+                                <span class="activity-time">2 mins ago</span>
+                            </div>
+                            <p>reported spam <code>+1 555-789-0123</code></p>
+                            <div class="activity-helpful">👍 47 found this helpful</div>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="user-avatar">M</div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <span class="user-name">Mike R.</span>
+                                <span class="activity-time">15 mins ago</span>
+                            </div>
+                            <p>verified business <code>+1 555-456-7890</code></p>
+                            <div class="activity-helpful">👍 23 found this helpful</div>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="user-avatar">J</div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <span class="user-name">Jenny L.</span>
+                                <span class="activity-time">1 hour ago</span>
+                            </div>
+                            <p>added comment <code>+1 555-321-9876</code></p>
+                            <div class="activity-helpful">👍 156 found this helpful</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
